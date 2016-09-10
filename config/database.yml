@@ -16,7 +16,7 @@ development:
   adapter:  postgresql
   host:     localhost
   encoding: unicode
-  database: sa_development
+  database: fnf_development
   pool:     5
   password:
   template: template0
@@ -43,7 +43,7 @@ test:
   adapter:  postgresql
   host:     localhost
   encoding: unicode
-  database: sa_test
+  database: fnf_test
   pool:     5
   password:
   template: template0
@@ -51,7 +51,7 @@ test:
 production:
   adapter: postgresql
   encoding: unicode
-  database: sa_production
+  database: fnf_production
   pool: 5
   username: postgres
   password: postgres
