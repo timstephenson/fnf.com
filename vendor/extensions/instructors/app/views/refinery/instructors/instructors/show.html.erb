@@ -27,7 +27,7 @@
 
     <div class="col-sm-4 col-md-3">
       <aside>
-        <h4>Instructors</h4>
+        <h4><%= t("refinery.instructors.instructors.current") %></h4>
         <div class="list-group" id="events">
           <% @instructors.each do |instructor| %>
             <%= render partial: "instructor_link", locals: { instructor: instructor } %>
@@ -35,7 +35,7 @@
         </div>
 
         <%- if @past_instructors.size > 0 %>
-          <h4>Past Instructors</h4>
+          <h4><%= t("refinery.instructors.instructors.past") %></h4>
           <div class="list-group" id="past-events">
             <% @past_instructors.each do |instructor| %>
               <%= render partial: "instructor_link", locals: { instructor: instructor } %>
