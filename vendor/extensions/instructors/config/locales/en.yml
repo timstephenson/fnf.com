@@ -23,6 +23,7 @@ en:
           other: Other Members
         current: Current Band Members
         past: Past Band Members
+        read_more: Read more
   activerecord:
     attributes:
       'refinery/instructors/instructor':
