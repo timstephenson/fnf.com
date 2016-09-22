@@ -3,7 +3,7 @@ module Refinery
     module Admin
       class EventsController < ::Refinery::AdminController
 
-        crudify :'refinery/events/event'
+        crudify :'refinery/events/event', :order => 'date DESC'
 
         private
 
