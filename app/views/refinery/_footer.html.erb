@@ -1,7 +1,7 @@
 <div class="row">
 
   <div class="col-sm-3">
-    <h5>More Information</h5>
+    <h4 class="text-muted">More Information</h4>
     <ul class="list-unstyled">
       <li>
         <%= link_to "Home", "/" %>
@@ -17,7 +17,9 @@
 
   <div class="col-sm-3">
     <%- if @events.size > 0 %>
-      <h5>The Band</h5>
+      <h4>
+        <%= link_to "Band Members", "/members" %>
+      </h4>
       <ul class="list-unstyled">
         <% @instructors.each do |instructor| %>
           <%= render partial: "refinery/instructors/instructors/instructor_list_item", locals: { instructor: instructor } %>
@@ -28,7 +30,9 @@
 
   <div class="col-sm-3">
     <%- if @events.size > 0 %>
-      <h5>Lates Posts</h5>
+      <h4>
+        <%= link_to "Latest Posts", "/blog" %>
+      </h4>
       <ul class="list-unstyled">
         <% @posts.each do |post| %>
           <li>
@@ -41,7 +45,9 @@
 
   <div class="col-sm-3">
     <%- if @events.size > 0 %>
-      <h5>Upcoming Events</h5>
+      <h4>
+        <%= link_to "Upcoming Events", "/events" %>
+      </h4>
       <ul class="list-unstyled">
         <% @events.each do |event| %>
           <%= render partial: "refinery/events/events/event_list_item", locals: { event: event } %>
