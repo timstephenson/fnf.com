@@ -2,7 +2,7 @@
   <div class="panel panel-default">
     <div class="panel-heading">
       <h3 class="panel-title">
-        <%= link_to instructor.full_name, refinery.instructors_instructor_path(instructor) %>
+        <%= link_to instructor.full_name, refinery.member_path(instructor) %>
       </h3>
     </div>
 
@@ -23,7 +23,7 @@
     <div class="panel-footer">
       <div class="row">
         <div class="col-xs-12">
-          <%= link_to t('refinery.instructors.instructors.read_more'), refinery.instructors_instructor_path(instructor), class: "pull-right" %>
+          <%= link_to t('refinery.instructors.instructors.read_more'), refinery.member_path(instructor), class: "pull-right" %>
         </div>
       </div>
     </div>
