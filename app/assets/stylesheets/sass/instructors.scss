@@ -4,6 +4,11 @@
 .instructor:nth-child(3n+1){
   clear: left;
 }
+.short-bio {
+  min-height: 475px;
+  max-height: 475px;
+  overflow: auto;
+}
 
 @media (min-width: $screen-sm-min) {
   .instructor:nth-child(3n+1){
