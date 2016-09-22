@@ -8,7 +8,9 @@
 
     <div class="panel-body">
       <%- if event.photo %>
-        <%= image_tag event.photo.url, class: "img-responsive mb15" %>
+        <div class="nmt15 nml15 nmr15 mb15">
+          <%= image_tag event.photo.url, class: "img-responsive" %>
+        </div>
       <%- end %>
 
       <%- if event.group %>
