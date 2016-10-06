@@ -1,6 +1,6 @@
 Refinery::Blog::BlogController.class_eval do
 
-  before_filter :fetch_footer_data, only: [:index, :show, :tagged]
+  before_filter :fetch_footer_data, only: [:index, :show, :tagged, :archive]
 
   protected
 
